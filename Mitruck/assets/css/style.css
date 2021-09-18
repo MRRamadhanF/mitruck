@@ -16,6 +16,41 @@
 }
 
 
+/* Header */
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+    background: rgba(77, 77, 77, 1);
+}
+
+#header .logo {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    width: 200px;
+    height: 30px;
+}
+
+@media (max-width: 992px) {
+    #header {
+        padding: 15px 0;
+    }
+}
+
+@media(max-width: 768px) {
+    #header {
+        background-color: rgba(77, 77, 77, 0.8);
+    }
+}
+
+
 /* Navbar */
 
 .navbar {
@@ -29,17 +64,14 @@
 
 .nav-link {
     margin-right: 15px;
-}
-
-.logo {
-    background-color: #F2F2F4;
+    color: #F2F2F4 !important;
 }
 
 
 /* Jumbotron */
 
 .jumbotron {
-    background-image: url(../img/A1.jpg);
+    background-image: url(../img/mt_bg.png);
     background-size: cover;
     position: relative;
     height: 340px;
@@ -68,7 +100,7 @@
 }
 
 .psp {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 
@@ -118,18 +150,19 @@
     /* Jumbotron */
     .jumbotron {
         margin-top: -75px;
-        height: 540px;
+        height: 760px;
+        background-size: cover;
     }
     .jumbotron .display-5 {
         font-size: 40px;
+        text-align: start;
     }
     .psp {
-        margin-top: 50px;
+        margin-top: 200px;
     }
     /* Button Panel */
     .btn-panel {
         margin-top: -120px;
-        height: 300px;
         width: 250px;
     }
     .text-end {
