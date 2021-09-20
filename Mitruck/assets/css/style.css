@@ -424,7 +424,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
 #hero:before,
 #solusibisnis:before,
 #mitdriv:before,
-#perusahaan:before {
+#tentangkami:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -436,7 +436,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
 #hero .container,
 #solusibisnis .container,
 #mitdriv .container,
-#perusahaan .container {
+#tentangkami .container {
     padding-top: 72px;
     position: relative;
     text-align: center;
@@ -445,7 +445,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
 #hero h1,
 #solusibisnis h1,
 #mitdriv h1,
-#perusahaan h1 {
+#tentangkami h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
@@ -457,7 +457,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
 #hero p,
 #solusibisnis p,
 #mitdriv p,
-#perusahaan p {
+#tentangkami p {
     color: #f2f2f4;
 }
 
@@ -465,7 +465,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
     #hero,
     #solusibisnis,
     #mitdriv,
-    #perusahaan {
+    #tentangkami {
         background-attachment: fixed;
     }
 }
@@ -474,7 +474,7 @@ Hero, Solusi Bisnis, Mitdriv, Perusahaan
     #hero h1,
     #solusibisnis h1,
     #mitdriv h1,
-    #perusahaan h1 {
+    #tentangkami h1 {
         font-size: 28px;
         line-height: 36px;
     }
@@ -755,10 +755,10 @@ mitdriv
 
 
 /*-----------------------------------------------------------------------------------------------------------------
-perusahaan
+Tentang Kami
 -----------------------------------------------------------------------------------------------------------------*/
 
-#perusahaan {
+#tentangkami {
     width: 100%;
     height: 100vh;
     background: url("../img/mt_bg.png") top center;
@@ -852,8 +852,8 @@ perusahaan
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-    background: #009961;
+    color: #f2f2f4;
+    background: #db203f;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -879,18 +879,18 @@ perusahaan
     bottom: -50px;
     z-index: 3;
     transition: all ease-in-out 0.3s;
-    background: #009961;
+    background: #db203f;
     padding: 15px 20px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
     font-size: 18px;
-    color: #fff;
+    color: #f2f2f4;
     font-weight: 600;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-    color: #fff;
+    color: #f2f2f4;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -907,7 +907,7 @@ perusahaan
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #33ffb4;
+    color: #01203d;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -925,67 +925,268 @@ perusahaan
 
 
 /*-----------------------------------------------------------------------------------------------------------------
-# Portfolio Details
+# Clients
 -----------------------------------------------------------------------------------------------------------------*/
 
-.portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-    width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #009961;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #009961;
-}
-
-.portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(40, 40, 40, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
+.clients {
     padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.clients .clients-wrap {
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
 }
 
-.portfolio-details .portfolio-description p {
+.clients .client-logo {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
+    background: #fff;
+    height: 140px;
+}
+
+.clients .client-logo:hover img {
+    transform: scale(1.1);
+}
+
+.clients img {
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+# About Us
+-----------------------------------------------------------------------------------------------------------------*/
+
+.about .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.about .content ul {
+    list-style: none;
     padding: 0;
+}
+
+.about .content ul li {
+    padding-left: 28px;
+    position: relative;
+}
+
+.about .content ul li+li {
+    margin-top: 10px;
+}
+
+.about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #db203f;
+    line-height: 1;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .content .btn-learn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #db203f;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #db203f;
+}
+
+.about .content .btn-learn-more:hover {
+    background: #db203f;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+# Faq
+-----------------------------------------------------------------------------------------------------------------*/
+
+.faq {
+    padding: 0;
+}
+
+.faq .content {
+    padding: 60px 100px 0 100px;
+}
+
+.faq .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.faq .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.faq .content p {
+    font-size: 15px;
+    color: #848484;
+}
+
+.faq .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+}
+
+.faq .accordion-list {
+    padding: 0 100px 60px 100px;
+}
+
+.faq .accordion-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+.faq .accordion-list li+li {
+    margin-top: 15px;
+}
+
+.faq .accordion-list li {
+    padding: 20px;
+    background: #fefefe;
+    box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    border-radius: 4px;
+}
+
+.faq .accordion-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-right: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.faq .accordion-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.faq .accordion-list p {
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+
+.faq .accordion-list .icon-show {
+    display: none;
+}
+
+.faq .accordion-list a.collapsed {
+    color: #343a40;
+}
+
+.faq .accordion-list a.collapsed:hover {
+    color: #db203f;
+}
+
+.faq .accordion-list a.collapsed .icon-show {
+    display: inline-block;
+}
+
+.faq .accordion-list a.collapsed .icon-close {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .faq .content,
+    .faq .accordion-list {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .faq .img {
+        padding-top: 30px;
+    }
+    .faq .content {
+        padding-top: 30px;
+    }
+    .faq .accordion-list {
+        padding-bottom: 30px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+# Cta
+-----------------------------------------------------------------------------------------------------------------*/
+
+.cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/f4.jpg") fixed center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+}
+
+.cta .cta-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+    background: #db203f;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.cta .cta-btn:hover {
+    background: #01203d;
+}
+
+@media (max-width: 1024px) {
+    .cta {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 769px) {
+    .cta .cta-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
