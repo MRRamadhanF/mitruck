@@ -1,1 +1,2 @@
 # mitruck
+Tampilan frontend mitruck
