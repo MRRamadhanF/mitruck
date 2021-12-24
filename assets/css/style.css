@@ -36,7 +36,7 @@
 }
 
 .landing-section {
-    padding: 100px !important;
+    padding: 50px !important;
 }
 
 .float-left {
@@ -49,12 +49,6 @@
 
 .h-0{
     height: 0 !important;
-}
-
-@media screen and (max-width: 920px){
-    .landing-section {
-        padding: 100px 50px !important;
-    }
 }
 
 @media screen and (max-width: 426px){

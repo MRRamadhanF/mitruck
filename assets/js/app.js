@@ -115,6 +115,12 @@ console.log(faqs);
 for (let i = 0; i < faqs.length; i++) {
     const faq = faqs.item(i);
     faq.addEventListener("click", () => {
+        for (let j = 0; j < faqs.length; j++) {
+            const faqItem = faqs.item(j);
+            if (j != i) {
+                faqItem.classList.remove("collapse")
+            }
+        }
         faq.classList.toggle("collapse")
     })
 }

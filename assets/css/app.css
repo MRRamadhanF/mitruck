@@ -256,8 +256,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* * {border: 1px solid red;} */
-
 .power-text {
     display: flex;
     align-items: start;
@@ -280,6 +278,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 4rem;
 }
 
+.other-power-image {
+    flex-basis: 35%;
+}
+
+.other-power-text {
+    flex-basis: 65%;
+}
+
 @media screen and (max-width: 1050px){
     .power-text {
         gap: 1.5rem;
@@ -297,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------- How Works ----------- */
 .how-works {
-    padding-top: 0 !important;
+    /* padding-top: 0 !important; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,15 +334,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: unset;
 }
 
+.faq:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
 .faq-q {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .faq .faq-q i {
-    cursor: pointer;
     transition: .3s ease;
 }
 
@@ -354,6 +364,21 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 1000px;
 }
 /* ----------- End FAQ ----------- */
+
+/* ----------- Be Driver ----------- */
+.be-driver {
+    text-align: center;
+    gap: 3rem;
+}
+
+.be-driver-image {
+    flex-basis: 40%;
+}
+
+.be-driver-image img{
+    width: 200px;
+}
+/* ----------- End Be Driver ----------- */
 
 /* ----------- Break Point ----------- */
 .break {
@@ -419,7 +444,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 40px;
     background-color: var(--warning);
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 /* ----------- End Kontak Info ----------- */
 
@@ -603,6 +628,10 @@ h1, h2, h3, h4, h5, h6 {
 
     #other-hero {
         top: 13rem;
+    }
+
+    #other-hero p {
+        margin-top: 0;
     }
 }
 
