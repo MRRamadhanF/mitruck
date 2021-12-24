@@ -1,0 +1,37 @@
+/* Importing Fonts */
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: "Tahu";
+    src: url("../fonts/tahu/Tahu!.ttf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/century-gothic/CenturyGothic.ttf");
+}
+/* End Importing Fonts */
+
+/* Declare Color and Fonts */
+:root {
+    /* Color */
+    --warning: #f1b708;
+    --dark: #1a1a1a;
+    --primary: #01203d;
+    --gray: #4d4d4d;
+    --info: #04a4ba;
+    --light: #f2f2f4;
+    --danger: #db203f;
+    --success: #28a745;
+    --black: #000;
+    --white: #fff;
+
+    /* Font */
+    --professional: "Open Sans";
+    --spirit: "Tahu";
+    --tough: "Century Gothic";
+}
+/* End Declare Color and Fonts */

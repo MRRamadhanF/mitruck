@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ***** Font Awesome Icon ***** -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- ***** Brand Style ***** -->
+    <link rel="stylesheet" href="assets/css/brand.css">
+
+    <!-- ***** Style Umum ***** -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ***** Style Khusus Admin ***** -->
+    <link rel="stylesheet" href="assets/css/admin/sidebar.css">
+    <link rel="stylesheet" href="assets/css/admin/app.css">
+
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="side-identity">
+            <div class="side-identity-image">
+                <img src="assets/img/shipper.png" alt="gambar admin">
+            </div>
+            <div class="side-identity-name">
+                <p>Ramadhan</p>
+            </div>
+        </div>
+        <div class="side-links">
+            <a href="#" class="active">
+                <i class="fas fa-home"></i>
+                <span>
+                    Dashboard
+                </span> 
+            </a>
+            <a href="#" class="side-links-dropdown" id="dropdown-side">
+                <span class="dropdown-link">
+                    <i class="fas fa-users"></i>
+                    <span>Daftar User</span>
+                    <i class="fas fa-chevron-left float-right" id="drop-icon"></i>
+                </span>
+                <div class="dropdown-menu" id="dropdown-menu-side">
+                    <a href="#"><i class="fas fa-user-cog"></i> 
+                        <span>
+                            Daftar Admin
+                        </span>
+                    </a>
+                    <a href="#"><i class="fas fa-user-ninja"></i> 
+                        <span>
+                            Daftar Driver
+                        </span>
+                    </a>
+                    <a href="#"><i class="fas fa-user"></i> 
+                        <span>
+                            Daftar Shipper
+                        </span>
+                    </a>
+                </div>
+            </a>
+            <a href="#">
+                <i class="fas fa-truck"></i> 
+                <span>
+                    Daftar Armada
+                </span>
+            </a>
+            <a href="#">
+                <i class="fas fa-newspaper"></i> 
+                <span>
+                    Daftar Blog
+                </span>
+            </a>
+            <a href="#">
+                <i class="fas fa-dolly"></i> 
+                <span>
+                    Daftar Pesanan
+                </span>
+            </a>
+        </div>
+        <div class="side-foot" id="side-foot">
+            <a href="#" class="side-foot-btn">
+                <i class="fas fa-sign-out-alt"></i> 
+                <span>
+                    Keluar
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="header-admin" id="header-admin">
+        <div class="header-menu">
+            <i class="fas fa-bars" id="burger"></i>
+            <span>
+                Dashboard
+            </span> 
+        </div>
+        <div class="header-logo">
+            <img src="assets/img/Logo3.png" alt="">
+        </div>
+    </header>
+
+    <main class="admin-main-content" id="admin-main">
+        <div class="admin-fast">
+            <div class="admin-fast-info">
+                <p>Jumlah Admin</p>
+                <h1><span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter">
+                </span></h1>
+                <i class="fas fa-user-cog fa-3x float-right"></i> 
+            </div>
+            <div class="admin-fast-info">
+                <p>Jumlah Driver</p>
+                <h1><span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter">
+                </span></h1>
+                <i class="fas fa-user-ninja fa-3x float-right"></i> 
+            </div>
+            <div class="admin-fast-info">
+                <p>Jumlah Shipper</p>
+                <h1><span data-purecounter-start="0" data-purecounter-end="55" data-purecounter-duration="1" class="purecounter">
+                </span></h1>
+                <i class="fas fa-user fa-3x float-right"></i> 
+            </div>
+            <div class="admin-fast-info">
+                <p>Jumlah Pesanan</p>
+                <h1><span data-purecounter-start="0" data-purecounter-end="108" data-purecounter-duration="1" class="purecounter">
+                </span></h1>
+                <i class="fas fa-shipping-fast fa-3x float-right"></i> 
+            </div>
+        </div>
+
+        <div class="admin-main-panel">
+            <div class="admin-history">
+                <div class="admin-history-title">
+                    <h3>Aktivitas Admin</h3>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="admin-history-list">
+                    <div class="admin-history-item">
+                        <div class="admin-history-time">
+                            15 menit yang lalu
+                        </div>
+                        <div class="admin-history-action">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quasi id ipsam animi quidem unde a quaerat tempore quisquam minus.</p>
+                        </div>
+                    </div>
+                    <div class="admin-history-item">
+                        <div class="admin-history-time">
+                            15 menit yang lalu
+                        </div>
+                        <div class="admin-history-action">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quasi id ipsam animi quidem unde a quaerat tempore quisquam minus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-main-chart">
+                <div class="admin-bar-chart">
+                     <div class="admin-bar-chart-title">
+                        <h3>Total Pesanan</h3>
+                     </div>
+                     <div class="admin-bar-chart-body" id="admin-chart">
+                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ***** JQuery ***** -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+    <!-- ***** Chart.js ***** -->
+    <script src="assets/plugins/chart.js/Chart.min.js"></script>
+
+    <!-- ***** Purecounter.js ***** -->
+    <script src="assets/plugins/purecounter/purecounter_vanilla.js"></script>
+
+    <script src="assets/js/admin.js"></script>
+
+    <script>
+        var areaChartData = {
+            labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                label               : 'Pesanan Sukses',
+                backgroundColor     : '#04a4ba',
+                borderColor         : 'rgba(60,141,188,0.8)',
+                pointRadius          : false,
+                pointColor          : '#3b8bba',
+                pointStrokeColor    : 'rgba(60,141,188,1)',
+                pointHighlightFill  : '#fff',
+                pointHighlightStroke: 'rgba(60,141,188,1)',
+                data                : [28, 48, 40, 19, 86, 27, 90]
+                },
+                {
+                label               : 'Pesanan Dibatalkan',
+                backgroundColor     : 'rgba(210, 214, 222, 1)',
+                borderColor         : 'rgba(210, 214, 222, 1)',
+                pointRadius         : false,
+                pointColor          : 'rgba(210, 214, 222, 1)',
+                pointStrokeColor    : '#c1c7d1',
+                pointHighlightFill  : '#fff',
+                pointHighlightStroke: 'rgba(220,220,220,1)',
+                data                : [65, 59, 80, 81, 56, 55, 40]
+                },
+            ]
+        }
+
+        
+        //-------------
+        //- BAR CHART -
+        //-------------
+        var barChartCanvas = $('#barChart').get(0).getContext('2d')
+        var barChartData = $.extend(true, {}, areaChartData)
+        var temp0 = areaChartData.datasets[0]
+        var temp1 = areaChartData.datasets[1]
+        barChartData.datasets[0] = temp1
+        barChartData.datasets[1] = temp0
+
+        var barChartOptions = {
+        responsive              : true,
+        maintainAspectRatio     : false,
+        datasetFill             : false
+        }
+
+        new Chart(barChartCanvas, {
+        type: 'bar',
+        data: barChartData,
+        options: barChartOptions
+        })
+    </script>
+</body>
+</html>
