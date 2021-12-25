@@ -448,6 +448,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ----------- End Kontak Info ----------- */
 
+/* ----------- Join Flag ----------- */
+.join-flag {
+    background-image: url(../img/pexels-александар-цветановић-1422286.jpg);
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.join-flag-card {
+    margin-top: -75px;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: #01203dec;
+    right: 50px;
+    padding: 30px;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.join-flag-card p {
+    margin: 10px 0;
+}
+
+.flag-btn {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-btn a {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--warning);
+    color: var(--white);
+    text-decoration: none;
+}
+/* ----------- Join Flag ----------- */
+
 /* ----------- Footer ----------- */
 .footer {
     width: 100%;
@@ -672,6 +715,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .armada-content {
         grid-template-columns: 100%;
+    }
+
+    .join-flag-card {
+        right: 20px;
+        padding: 15px;
+        width: 250px;
     }
 
     .footer {
