@@ -78,10 +78,6 @@ let topNavbar = () => {
 }
 
 // console.log(winSize());
-window.addEventListener("resize", () => {
-    topNavbar()
-})
-topNavbar()
 // -------- End Header Area --------
 
 // -------- Welcome Area --------
@@ -111,7 +107,6 @@ if (typeof (sdcards) != 'undefined' && sdcards != null) {
 
 const faqs = document.getElementsByClassName("faq")
 
-console.log(faqs);
 for (let i = 0; i < faqs.length; i++) {
     const faq = faqs.item(i);
     faq.addEventListener("click", () => {
@@ -124,3 +119,8 @@ for (let i = 0; i < faqs.length; i++) {
         faq.classList.toggle("collapse")
     })
 }
+
+window.addEventListener("resize", () => {
+    topNavbar()
+})
+topNavbar()
