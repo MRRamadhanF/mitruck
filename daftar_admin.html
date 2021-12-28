@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ***** Font Awesome Icon ***** -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- ***** jsGrid ***** -->
+    <link rel="stylesheet" href="assets/plugins/jsgrid/jsgrid.min.css">
+
+    <!-- ***** Brand Style ***** -->
+    <link rel="stylesheet" href="assets/css/brand.css">
+
+    <!-- ***** Style Umum ***** -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ***** Style Khusus Admin ***** -->
+    <link rel="stylesheet" href="assets/css/admin/sidebar.css">
+    <link rel="stylesheet" href="assets/css/admin/app.css">
+
+</head>
+<body>
+    <div id="close-side" class="d-none"></div>
+    <nav class="sidebar" id="sidebar">
+        <div class="side-identity">
+            <div class="side-identity-image">
+                <img src="assets/img/shipper.png" alt="gambar admin">
+            </div>
+            <div class="side-identity-name">
+                <p>Ramadhan</p>
+            </div>
+        </div>
+        <div class="side-links">
+            <a href="javascript:void(0)" class="">
+                <i class="fas fa-home"></i>
+                <span>
+                    Dashboard
+                </span> 
+            </a>
+            <a href="javascript:void(0)" class="side-links-dropdown" id="dropdown-side">
+                <span class="dropdown-link">
+                    <i class="fas fa-users"></i>
+                    <span>Daftar User</span>
+                    <i class="fas fa-chevron-left float-right" id="drop-icon"></i>
+                </span>
+                <div class="dropdown-menu" id="dropdown-menu-side">
+                    <a href="daftar_admin.html" class="active"><i class="fas fa-user-cog "></i> 
+                        <span>
+                            Daftar Admin
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)"><i class="fas fa-user-ninja"></i> 
+                        <span>
+                            Daftar Driver
+                        </span>
+                    </a>
+                    <a href="javascript:void(0)"><i class="fas fa-user"></i> 
+                        <span>
+                            Daftar Shipper
+                        </span>
+                    </a>
+                </div>
+            </a>
+            <a href="javascript:void(0)">
+                <i class="fas fa-truck"></i> 
+                <span>
+                    Daftar Armada
+                </span>
+            </a>
+            <a href="javascript:void(0)">
+                <i class="fas fa-newspaper"></i> 
+                <span>
+                    Daftar Blog
+                </span>
+            </a>
+            <a href="javascript:void(0)">
+                <i class="fas fa-dolly"></i> 
+                <span>
+                    Daftar Pesanan
+                </span>
+            </a>
+        </div>
+        <div class="side-foot" id="side-foot">
+            <a href="javascript:void(0)" class="side-foot-btn">
+                <i class="fas fa-sign-out-alt"></i> 
+                <span>
+                    Keluar
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <header class="header-admin" id="header-admin">
+        <div class="header-menu">
+            <i class="fas fa-bars" id="burger"></i>
+            <span>
+                Daftar Admin
+            </span> 
+        </div>
+        <div class="header-logo">
+            <img src="assets/img/Logo3.png" alt="">
+        </div>
+    </header>
+
+    <main class="admin-main-content" id="admin-main">
+        <div class="admin-address">
+            <a href="javascript:void(0)">
+                <h5>Daftar Admin</h5>
+            </a>
+        </div>
+
+        <div class="admin-main-panel d-block">
+            <div class="admin-history user-table-panel">
+                <div class="admin-history-title">
+                    <h3>Tabel Akun Admin</h3>
+                    <div class="admin-action">
+                        <a class="add-btn">Tambah Admin</a>
+                        <div class="form-group">
+                            <input type="text" name="search" id="search" placeholder="cari" onkeyup="searchTable()">
+                            <button type="submit" class="search-btn" onclick="searchTable()">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-history-list d-block table-responsive">
+                    <table class="table-admin" id="data">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable(0)">ID</th>
+                                <th onclick="sortTable(1)">Nama</th>
+                                <th onclick="sortTable(2)">No. Handphone</th>
+                                <th onclick="sortTable(3)">Email</th>
+                                <th onclick="sortTable(4)">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Bima Satria Garuda</td>
+                                <td>+6283154190136</td>
+                                <td>bima.satria@rcti.tv</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Budi Doremi</td>
+                                <td>+6281234567890</td>
+                                <td>budiDoremon@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Zainuddin</td>
+                                <td>+6289696969696</td>
+                                <td>vanderwijck@yahoo.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tatang</td>
+                                <td>+6281345234654</td>
+                                <td>pakTatang@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Yunida Salsabila</td>
+                                <td>+628765345241</td>
+                                <td>yunida.salsabila@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>M. Ridha Ramadhan F</td>
+                                <td>+6288566453424</td>
+                                <td>mrraf@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Bima Satria Garuda</td>
+                                <td>+6283154190136</td>
+                                <td>bima.satria@rcti.tv</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Budi Doremi</td>
+                                <td>+6281234567890</td>
+                                <td>budiDoremon@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Bima Satria Garuda</td>
+                                <td>+6283154190136</td>
+                                <td>bima.satria@rcti.tv</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Budi Doremi</td>
+                                <td>+6281234567890</td>
+                                <td>budiDoremon@gmail.com</td>
+                                <td><a href="javascript:void(0)" class="table-action">view</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- ***** JQuery ***** -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+    <script src="assets/js/admin.js"></script>
+
+    <script>
+        
+    </script>
+</body>
+</html>

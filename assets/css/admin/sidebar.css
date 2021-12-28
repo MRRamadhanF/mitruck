@@ -9,6 +9,10 @@ body {
     font-family: var(--professional);
 }
 
+table {
+    border-collapse: collapse;
+}
+
 /* +++++ SIDEBAR START +++++ */
 .sidebar {
     height: 100%;
