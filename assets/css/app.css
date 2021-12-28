@@ -683,6 +683,51 @@ div.all-news-date {
 }
 /* ----------- End About Us ----------- */
 
+/* ----------- Contact ----------- */
+.contact {
+    margin-bottom: 150px;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+
+.contact-map {
+    width: 100%;
+    height: 400px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form > * {
+    margin: 8px 0;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 10px 15px;
+    resize: none;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.btn-contact {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: rgb(7, 7, 37);
+}
+/* ----------- End Contact ----------- */
+
 /* ----------- Footer ----------- */
 .footer {
     width: 100%;
@@ -867,6 +912,10 @@ div.all-news-date {
     .all-news-content {
         grid-template-columns: 47% 47%;
         grid-gap: 2rem;
+    }
+
+    .contact-main {
+        grid-template-columns: 100%;
     }
 
     .footer {
