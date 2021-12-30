@@ -55,6 +55,10 @@
     transform: translateX(-105%);
 }
 
+.quote {
+    font-family: var(--spirit);
+}
+
 @media screen and (max-width: 426px){
     .landing-section{
         padding: 80px 25px;

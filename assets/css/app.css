@@ -892,6 +892,10 @@ div.all-news-date {
         padding-top: 130px;
     }
 
+    .join-title {
+        font-size: 30px !important;
+    }
+
     .new-news {
         padding: 0 25px;
     }
